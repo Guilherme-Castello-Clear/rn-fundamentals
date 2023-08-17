@@ -5,12 +5,13 @@ import Primeiro from "./Componentes/Primeiro";
 import { Comp1, Comp2 } from "./Componentes/Multi";
 import Comp from "./Componentes/Multi";
 import MinMax from "./Componentes/MinMax";
+import Aleatorio from "./Componentes/Aleatorio";
 
 export default () => {
     
     return (
         <View style={style.App}>
-            <MinMax min={3} max={23}/>
+            <Aleatorio min={3} max={23}/>
         </View>
     )
 }
