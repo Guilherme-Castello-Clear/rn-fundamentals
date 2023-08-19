@@ -12,12 +12,16 @@ import Contador from "./Componentes/Contador";
 // import Pai from "./Componentes/direta/Pai";
 import Pai from './Componentes/indireta/Pai'
 import Diferenciar from "./Componentes/Diferenciar";
-import ParImpar from './Componentes/ParImpar.js'
+// import ParImpar from './Componentes/ParImpar.js'
+import Membro from "./Componentes/relacao/Membro";
+import Familia from "./Componentes/relacao/Familia";
 export default () => {
 
     return (
         <SafeAreaView style={style.App}>
-            <ParImpar num={85}/>
+            <Familia>
+                <Membro nome="Guilherme" sobrenome="Castello"/>
+            </Familia>
         </SafeAreaView>
     )
 }
