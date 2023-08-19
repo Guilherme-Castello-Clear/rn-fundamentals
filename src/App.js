@@ -9,11 +9,13 @@ import Aleatorio from "./Componentes/Aleatorio";
 import Titulo from "./Componentes/Titulo";
 import Botao from "./Componentes/Botao";
 import Contador from "./Componentes/Contador";
+// import Pai from "./Componentes/direta/Pai";
+import Pai from './Componentes/indireta/Pai'
 export default () => {
 
     return (
         <View style={style.App}>
-            <Contador/>
+            <Pai/>
         </View>
     )
 }
