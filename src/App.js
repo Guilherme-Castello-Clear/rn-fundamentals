@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 
 import Primeiro from "./Componentes/Primeiro";
 import { Comp1, Comp2 } from "./Componentes/Multi";
@@ -11,12 +11,14 @@ import Botao from "./Componentes/Botao";
 import Contador from "./Componentes/Contador";
 // import Pai from "./Componentes/direta/Pai";
 import Pai from './Componentes/indireta/Pai'
+import Diferenciar from "./Componentes/Diferenciar";
+import ParImpar from './Componentes/ParImpar.js'
 export default () => {
 
     return (
-        <View style={style.App}>
-            <Pai/>
-        </View>
+        <SafeAreaView style={style.App}>
+            <ParImpar num={85}/>
+        </SafeAreaView>
     )
 }
 
