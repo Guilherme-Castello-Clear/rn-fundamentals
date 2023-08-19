@@ -8,14 +8,12 @@ import MinMax from "./Componentes/MinMax";
 import Aleatorio from "./Componentes/Aleatorio";
 import Titulo from "./Componentes/Titulo";
 import Botao from "./Componentes/Botao";
+import Contador from "./Componentes/Contador";
 export default () => {
 
     return (
         <View style={style.App}>
-            
-            <Botao/>
-            <Titulo principal="Cadastrando" secundario="Tela de Cadastro"/>
-            <Aleatorio min={3} max={23}/>
+            <Contador/>
         </View>
     )
 }
